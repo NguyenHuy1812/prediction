@@ -27,7 +27,7 @@ async function main() {
 
   const predictFTM = await upgrades.deployProxy(PREDICTFTMFactory,["0x8A753747A1Fa494EC906cE90E9f37563A8AF630e", 
   "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266", 
-  "0x70997970c51812dc3a010c7d01b50e0d17dc79c8", 
+  "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266", 
   300, 
   180, 
   "1000000000000000000", 

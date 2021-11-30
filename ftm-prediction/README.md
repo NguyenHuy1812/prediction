@@ -13,3 +13,10 @@ npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
 ```
+
+# For debug 
+
+```shell
+ hh run scripts/deploy.js --network localhost  => update .env CONTRACT_ADDRESS
+ hh run scripts/test_script.js --network localhost  
+ ```
