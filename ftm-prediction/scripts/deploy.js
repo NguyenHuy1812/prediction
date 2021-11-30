@@ -16,14 +16,14 @@ async function main() {
   // We get the contract to deploy
   const PREDICTFTMFactory = await ethers.getContractFactory("FtmPricePrediction");
   console.log("Deploying predictFTM....")
-  const predictFTM = await upgrades.deployProxy(PREDICTFTMFactory,{ function: 'initialize', constructorArgs: ["0xf4766552D15AE4d256Ad41B6cf2933482B0680dc", 
+  const predictFTM = await upgrades.deployProxy(PREDICTFTMFactory,["0x8A753747A1Fa494EC906cE90E9f37563A8AF630e", 
   "0xAc0C26a77ed87a910AC10cB6f88EfCE60731a644", 
-  "0x267c514f79f1eCAA6402592C2A7066F9CB04A40C", 
-  60, 
+  "0xAc0C26a77ed87a910AC10cB6f88EfCE60731a644", 
+  300, 
   180, 
   "1000000000000000000", 
   300, 
-  300]});
+  300]);
 
   await predictFTM.deployed();
 

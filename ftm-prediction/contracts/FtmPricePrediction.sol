@@ -1,38 +1,35 @@
 // SPDX-License-Identifier: MIT
-import "@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
+// import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+// import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
-import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
+// import "@openzeppelin/contracts/security/Pausable.sol";
+// import "@openzeppelin/contracts/access/Ownable.sol";
 import "./interfaces/AggregatorV3Interface.sol";
-/*
- ________ _________  _____ ______       ________  _______  _________
-|\  _____\\___   ___\\   _ \  _   \    |\   __  \|\  ___ \|\___   ___\
-\ \  \__/\|___ \  \_\ \  \\\__\ \  \   \ \  \|\ /\ \   __/\|___ \  \_|
- \ \   __\    \ \  \ \ \  \\|__| \  \   \ \   __  \ \  \_|/__  \ \  \
-  \ \  \_|     \ \  \ \ \  \    \ \  \ __\ \  \|\  \ \  \_|\ \  \ \  \
-   \ \__\       \ \__\ \ \__\    \ \__\\__\ \_______\ \_______\  \ \__\
-    \|__|        \|__|  \|__|     \|__\|__|\|_______|\|_______|   \|__|
 
-  Docs: https://docs.ftm.bet
-  Site: https://ftm.bet
-*/
+import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
+import "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol";
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.4;
 pragma abicoder v2;
 
 /**
  * @title FTMBet predictions
  */
-contract FtmPricePrediction is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpgradeable {
+contract FtmPricePrediction is Initializable, OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpgradeable {
   using SafeERC20Upgradeable for IERC20Upgradeable;
-  bool public  genesisLockOnce;
+
+  AggregatorV3Interface public oracle;
+
+  bool public genesisLockOnce;
   bool public genesisStartOnce;
 
   address public adminAddress; // address of the admin
   address public operatorAddress; // address of the operator
 
-  uint256 public  bufferSeconds; // number of seconds for valid execution of a prediction round
+  uint256 public bufferSeconds; // number of seconds for valid execution of a prediction round
   uint256 public intervalSeconds; // interval in seconds between two prediction rounds
 
   uint256 public minBetAmount; // minimum betting amount (denominated in wei)
@@ -41,50 +38,11 @@ contract FtmPricePrediction is OwnableUpgradeable, PausableUpgradeable, Reentran
 
   uint256 public currentEpoch; // current epoch for prediction round
 
-  uint256 public  oracleLatestRoundId; // converted from uint80 (Chainlink)
+  uint256 public oracleLatestRoundId; // converted from uint80 (Chainlink)
   uint256 public oracleUpdateAllowance; // seconds
+
   uint256 public constant MAX_TREASURY_FEE = 1000; // 10%
-  AggregatorV3Interface public oracle;
-  function initialize(    
-    address _oracleAddress,
-    address _adminAddress,
-    address _operatorAddress,
-    uint256 _intervalSeconds,
-    uint256 _bufferSeconds,
-    uint256 _minBetAmount,
-    uint256 _oracleUpdateAllowance,
-    uint256 _treasuryFee
-    ) internal initializer {
-    genesisLockOnce = false;
-    genesisStartOnce = false;
 
-    adminAddress = _oracleAddress; // address of the admin
-    operatorAddress = _adminAddress; // address of the operator
-
-    bufferSeconds = _bufferSeconds; // number of seconds for valid execution of a prediction round
-    intervalSeconds = _intervalSeconds; // interval in seconds between two prediction rounds
-
-    minBetAmount = _minBetAmount; // minimum betting amount (denominated in wei)
-    treasuryFee =_treasuryFee; // treasury rate (e.g. 200 = 2%, 150 = 1.50%)
-    treasuryAmount; // treasury amount that was not claimed
-
-    currentEpoch; // current epoch for prediction round
-
-    oracleLatestRoundId; // converted from uint80 (Chainlink)
-    oracleUpdateAllowance = _oracleUpdateAllowance; // seconds
-  {
-    require(_treasuryFee <= MAX_TREASURY_FEE, "Treasury fee too high");
-
-    oracle = AggregatorV3Interface(_oracleAddress);
-    adminAddress = _adminAddress;
-    operatorAddress = _operatorAddress;
-    intervalSeconds = _intervalSeconds;
-    bufferSeconds = _bufferSeconds;
-    minBetAmount = _minBetAmount;
-    oracleUpdateAllowance = _oracleUpdateAllowance;
-    treasuryFee = _treasuryFee;
-  }
-}
   mapping(uint256 => mapping(address => BetInfo)) public ledger;
   mapping(uint256 => Round) public rounds;
   mapping(address => uint256[]) public userRounds;
@@ -176,15 +134,15 @@ contract FtmPricePrediction is OwnableUpgradeable, PausableUpgradeable, Reentran
    * @param _oracleUpdateAllowance: oracle update allowance
    * @param _treasuryFee: treasury fee (1000 = 10%)
    */
-  // 1(
-    // address _oracleAddress,
-    // address _adminAddress,
-    // address _operatorAddress,
-    // uint256 _intervalSeconds,
-    // uint256 _bufferSeconds,
-    // uint256 _minBetAmount,
-    // uint256 _oracleUpdateAllowance,
-    // uint256 _treasuryFee
+  // constructor(
+  //   address _oracleAddress,
+  //   address _adminAddress,
+  //   address _operatorAddress,
+  //   uint256 _intervalSeconds,
+  //   uint256 _bufferSeconds,
+  //   uint256 _minBetAmount,
+  //   uint256 _oracleUpdateAllowance,
+  //   uint256 _treasuryFee
   // ) {
   //   require(_treasuryFee <= MAX_TREASURY_FEE, "Treasury fee too high");
 
@@ -197,6 +155,30 @@ contract FtmPricePrediction is OwnableUpgradeable, PausableUpgradeable, Reentran
   //   oracleUpdateAllowance = _oracleUpdateAllowance;
   //   treasuryFee = _treasuryFee;
   // }
+  function initialize(
+    address _oracleAddress,
+    address _adminAddress,
+    address _operatorAddress,
+    uint256 _intervalSeconds,
+    uint256 _bufferSeconds,
+    uint256 _minBetAmount,
+    uint256 _oracleUpdateAllowance,
+    uint256 _treasuryFee) public initializer {
+    require(_treasuryFee <= MAX_TREASURY_FEE, "Treasury fee too high");
+    __Ownable_init();
+    __Pausable_init();
+    genesisLockOnce = false;
+    genesisStartOnce = false;
+    oracle = AggregatorV3Interface(_oracleAddress);
+    adminAddress = _adminAddress;
+    operatorAddress = _operatorAddress;
+    intervalSeconds = _intervalSeconds;
+    bufferSeconds = _bufferSeconds;
+    minBetAmount = _minBetAmount;
+    oracleUpdateAllowance = _oracleUpdateAllowance;
+    treasuryFee = _treasuryFee;
+  }
+
   /**
    * @notice Bet down position
    * @param epoch: epoch
@@ -314,7 +296,7 @@ contract FtmPricePrediction is OwnableUpgradeable, PausableUpgradeable, Reentran
   function genesisLockRound() external whenNotPaused onlyOperator {
     require(genesisStartOnce, "Can only run after genesisStartRound is triggered");
     require(!genesisLockOnce, "Can only run genesisLockRound once");
-  
+
     (uint80 currentRoundId, int256 currentPrice) = _getPriceFromOracle();
 
     oracleLatestRoundId = uint256(currentRoundId);
@@ -453,7 +435,7 @@ contract FtmPricePrediction is OwnableUpgradeable, PausableUpgradeable, Reentran
    * @dev Callable by owner
    */
   function recoverToken(address _token, uint256 _amount) external onlyOwner {
-   IERC20Upgradeable(_token).safeTransfer(address(msg.sender), _amount);
+    IERC20Upgradeable(_token).safeTransfer(address(msg.sender), _amount);
 
     emit TokenRecovery(_token, _amount);
   }
@@ -715,4 +697,4 @@ contract FtmPricePrediction is OwnableUpgradeable, PausableUpgradeable, Reentran
     }
     return size > 0;
   }
-}  
+}

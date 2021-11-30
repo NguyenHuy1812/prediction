@@ -1,10 +1,10 @@
 {
   "manifestVersion": "3.2",
   "admin": {
-    "address": "0x80b40fA03C4BC7F11cd82AD33B23ccdCC0175D30",
-    "txHash": "0x1bbfe0bc2e88a91d86549c5a52109a7bb8e01a1c6cfc0e11c1cc86d529df5aeb",
+    "address": "0x36c117C883BCab747203e9a96117e42a5D351c24",
+    "txHash": "0x0b04695ea4105807a2466f6e84beb86fc223fb0e86769e3c5807cbbf42b52ff5",
     "deployTransaction": {
-      "hash": "0x1bbfe0bc2e88a91d86549c5a52109a7bb8e01a1c6cfc0e11c1cc86d529df5aeb",
+      "hash": "0x0b04695ea4105807a2466f6e84beb86fc223fb0e86769e3c5807cbbf42b52ff5",
       "type": 2,
       "accessList": [],
       "blockHash": null,
@@ -14,7 +14,7 @@
       "from": "0xAc0C26a77ed87a910AC10cB6f88EfCE60731a644",
       "gasPrice": {
         "type": "BigNumber",
-        "hex": "0x3b9aca14"
+        "hex": "0x3b9aca0b"
       },
       "maxPriorityFeePerGas": {
         "type": "BigNumber",
@@ -22,7 +22,7 @@
       },
       "maxFeePerGas": {
         "type": "BigNumber",
-        "hex": "0x3b9aca14"
+        "hex": "0x3b9aca0b"
       },
       "gasLimit": {
         "type": "BigNumber",
@@ -33,56 +33,31 @@
         "type": "BigNumber",
         "hex": "0x00"
       },
-      "nonce": 8,
+      "nonce": 77,
       "data": "0x608060405234801561001057600080fd5b50600080546001600160a01b031916339081178255604051909182917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908290a350610759806100616000396000f3fe60806040526004361061007b5760003560e01c80639623609d1161004e5780639623609d1461011157806399a88ec414610124578063f2fde38b14610144578063f3b7dead146101645761007b565b8063204e1c7a14610080578063715018a6146100bc5780637eff275e146100d35780638da5cb5b146100f3575b600080fd5b34801561008c57600080fd5b506100a061009b366004610515565b610184565b6040516001600160a01b03909116815260200160405180910390f35b3480156100c857600080fd5b506100d1610215565b005b3480156100df57600080fd5b506100d16100ee366004610554565b610292565b3480156100ff57600080fd5b506000546001600160a01b03166100a0565b6100d161011f36600461058c565b61031c565b34801561013057600080fd5b506100d161013f366004610554565b6103ad565b34801561015057600080fd5b506100d161015f366004610515565b610405565b34801561017057600080fd5b506100a061017f366004610515565b6104ef565b6000806000836001600160a01b03166040516101aa90635c60da1b60e01b815260040190565b600060405180830381855afa9150503d80600081146101e5576040519150601f19603f3d011682016040523d82523d6000602084013e6101ea565b606091505b5091509150816101f957600080fd5b8080602001905181019061020d9190610538565b949350505050565b6000546001600160a01b031633146102485760405162461bcd60e51b815260040161023f906106c0565b60405180910390fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031633146102bc5760405162461bcd60e51b815260040161023f906106c0565b6040516308f2839760e41b81526001600160a01b038281166004830152831690638f283970906024015b600060405180830381600087803b15801561030057600080fd5b505af1158015610314573d6000803e3d6000fd5b505050505050565b6000546001600160a01b031633146103465760405162461bcd60e51b815260040161023f906106c0565b60405163278f794360e11b81526001600160a01b03841690634f1ef286903490610376908690869060040161065d565b6000604051808303818588803b15801561038f57600080fd5b505af11580156103a3573d6000803e3d6000fd5b5050505050505050565b6000546001600160a01b031633146103d75760405162461bcd60e51b815260040161023f906106c0565b604051631b2ce7f360e11b81526001600160a01b038281166004830152831690633659cfe6906024016102e6565b6000546001600160a01b0316331461042f5760405162461bcd60e51b815260040161023f906106c0565b6001600160a01b0381166104945760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b606482015260840161023f565b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b6000806000836001600160a01b03166040516101aa906303e1469160e61b815260040190565b600060208284031215610526578081fd5b81356105318161070b565b9392505050565b600060208284031215610549578081fd5b81516105318161070b565b60008060408385031215610566578081fd5b82356105718161070b565b915060208301356105818161070b565b809150509250929050565b6000806000606084860312156105a0578081fd5b83356105ab8161070b565b925060208401356105bb8161070b565b9150604084013567ffffffffffffffff808211156105d7578283fd5b818601915086601f8301126105ea578283fd5b8135818111156105fc576105fc6106f5565b604051601f8201601f19908116603f01168101908382118183101715610624576106246106f5565b8160405282815289602084870101111561063c578586fd5b82602086016020830137856020848301015280955050505050509250925092565b600060018060a01b038416825260206040818401528351806040850152825b818110156106985785810183015185820160600152820161067c565b818111156106a95783606083870101525b50601f01601f191692909201606001949350505050565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604082015260600190565b634e487b7160e01b600052604160045260246000fd5b6001600160a01b038116811461072057600080fd5b5056fea2646970667358221220d849f96f3086b9f82cdcf665adb8c697ace05638da1c7c16ab2d26293717af6764736f6c63430008020033",
-      "r": "0xd0a0874b8b1bf6c7c265d9a075d125abe722d3f0d56fa6a4f1b3b4db5466a91c",
-      "s": "0x37257308b25d64b89b79ee86e05dc150301f4b77664177799de2a6c550d77a48",
-      "v": 0,
-      "creates": "0x80b40fA03C4BC7F11cd82AD33B23ccdCC0175D30",
-      "chainId": 3
+      "r": "0x7b97deb89f88efa757b476c011dca5392462deec829d0c337dfbee3060f6fdff",
+      "s": "0x2601469920d148928cb64b96550a2564109bd6ec61b150b1d18796b0ae1778f1",
+      "v": 1,
+      "creates": "0x36c117C883BCab747203e9a96117e42a5D351c24",
+      "chainId": 4
     }
   },
   "proxies": [
     {
-      "address": "0xA8C778FeCe601De54c1e108a2acEB8db169a3127",
-      "txHash": "0xe2619e13b7fcd8576994dcd7ebd9f20ce3c27139fe4afee791ee7b2050a113bd",
+      "address": "0x36Eb33b2206560e58f4984c049160970BA0e3A48",
+      "txHash": "0x3ab619032645e7c9a4df0109c26f3f1ac680670876a1b6ba69f571f0b74fe573",
       "kind": "transparent"
     },
     {
-      "address": "0x38AcAA64E8242baD771360CB1ff56e602c83Fc30",
-      "txHash": "0x32919075380785a982ff75d7f8b29329368e3bfa17da66a6244f7016981e9168",
-      "kind": "transparent"
-    },
-    {
-      "address": "0xCB2016d33789223bbEeb80df95e285488F6Cfa82",
-      "txHash": "0x6e0e23864f7d784cd10c669301f3e29b1df751ecd4684fee7cd1e9569016fe3a",
-      "kind": "transparent"
-    },
-    {
-      "address": "0x1E06Ae970d7A73c3285c7F1823A6C2Fc89e76E15",
-      "txHash": "0xb9e2e85c3d4c237fb6f43d70908f0404633dfb5081f41f06e1b1471cadca8b69",
-      "kind": "transparent"
-    },
-    {
-      "address": "0x1bF6e84bfeB605918339298cD72E55dE80C3326A",
-      "txHash": "0x6407044d1ed3d282dcf1308fcb04a50bbe4b7b2e1dabf4868c00c054a7435e53",
-      "kind": "transparent"
-    },
-    {
-      "address": "0x4A0E453327B1277c9D7C8D5F37d07f31c6c6154f",
-      "txHash": "0x09e9983b433d0c431f1a36b3bcabd5a644c91bdc88336fc288f6d30797e53a34",
-      "kind": "transparent"
-    },
-    {
-      "address": "0x500863d5Ce5F15Bcc35a4E1863e973C3ae357c0e",
-      "txHash": "0xdfbbbfb459889212ec267b9a87491c198fe011111565214962b7b4450beb366b",
+      "address": "0x228c712D7322D66aa90543970c5c47C4eC9fb732",
+      "txHash": "0x1160869b2df4433a2d46b4fbea7ebd7edef4e714a34478a42a6154a9cb312c43",
       "kind": "transparent"
     }
   ],
   "impls": {
-    "a38dcc346d9cb9bb97593bf7875d1f0d93ce9fa4bc7a96208bfc08384cca3288": {
-      "address": "0x60f46cf42fB81697D216ebf1c4d7EFffeA411B03",
-      "txHash": "0x78cb3c5607c2cf70ef3dd3d44b35bc166777b219a00997ab53698757d818fade",
+    "899aec1e15af2f7edd4d62dd3d269d9ad52d3dc19dd997e596b99f6843cb42f7": {
+      "address": "0x9b8562f3C44831623fB60D69155c2f584501F5F7",
+      "txHash": "0x095e869e873b2fac2d9360d4f55b5f14c5c73c7ead6623dc74bbb5c4ebad1e51",
       "layout": {
         "storage": [
           {
@@ -138,667 +113,108 @@
             "label": "__gap",
             "type": "t_array(t_uint256)49_storage",
             "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:67"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "genesisLockOnce",
-            "type": "t_bool",
-            "src": "contracts/FtmPricePrediction.sol:29"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "genesisStartOnce",
-            "type": "t_bool",
-            "src": "contracts/FtmPricePrediction.sol:30"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "adminAddress",
-            "type": "t_address",
-            "src": "contracts/FtmPricePrediction.sol:32"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "operatorAddress",
-            "type": "t_address",
-            "src": "contracts/FtmPricePrediction.sol:33"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "bufferSeconds",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:35"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "intervalSeconds",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:36"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "minBetAmount",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:38"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "treasuryFee",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:39"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "treasuryAmount",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:40"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "currentEpoch",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:42"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "oracleLatestRoundId",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:44"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "oracleUpdateAllowance",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:45"
           },
           {
             "contract": "FtmPricePrediction",
             "label": "oracle",
-            "type": "t_contract(AggregatorV3Interface)3281",
-            "src": "contracts/FtmPricePrediction.sol:47"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "ledger",
-            "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(BetInfo)1455_storage))",
-            "src": "contracts/FtmPricePrediction.sol:89"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "rounds",
-            "type": "t_mapping(t_uint256,t_struct(Round)1447_storage)",
-            "src": "contracts/FtmPricePrediction.sol:90"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "userRounds",
-            "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
-            "src": "contracts/FtmPricePrediction.sol:91"
-          }
-        ],
-        "types": {
-          "t_bool": {
-            "label": "bool"
-          },
-          "t_address": {
-            "label": "address"
-          },
-          "t_uint256": {
-            "label": "uint256"
-          },
-          "t_contract(AggregatorV3Interface)3281": {
-            "label": "contract AggregatorV3Interface"
-          },
-          "t_mapping(t_uint256,t_mapping(t_address,t_struct(BetInfo)1455_storage))": {
-            "label": "mapping(uint256 => mapping(address => struct FtmPricePrediction.BetInfo))"
-          },
-          "t_mapping(t_address,t_struct(BetInfo)1455_storage)": {
-            "label": "mapping(address => struct FtmPricePrediction.BetInfo)"
-          },
-          "t_struct(BetInfo)1455_storage": {
-            "label": "struct FtmPricePrediction.BetInfo",
-            "members": [
-              {
-                "label": "position",
-                "type": "t_enum(Position)1418"
-              },
-              {
-                "label": "amount",
-                "type": "t_uint256"
-              },
-              {
-                "label": "claimed",
-                "type": "t_bool"
-              }
-            ]
-          },
-          "t_enum(Position)1418": {
-            "label": "enum FtmPricePrediction.Position",
-            "members": [
-              "Up",
-              "Down"
-            ]
-          },
-          "t_mapping(t_uint256,t_struct(Round)1447_storage)": {
-            "label": "mapping(uint256 => struct FtmPricePrediction.Round)"
-          },
-          "t_struct(Round)1447_storage": {
-            "label": "struct FtmPricePrediction.Round",
-            "members": [
-              {
-                "label": "epoch",
-                "type": "t_uint256"
-              },
-              {
-                "label": "startTimestamp",
-                "type": "t_uint256"
-              },
-              {
-                "label": "lockTimestamp",
-                "type": "t_uint256"
-              },
-              {
-                "label": "closeTimestamp",
-                "type": "t_uint256"
-              },
-              {
-                "label": "lockPrice",
-                "type": "t_int256"
-              },
-              {
-                "label": "closePrice",
-                "type": "t_int256"
-              },
-              {
-                "label": "lockOracleId",
-                "type": "t_uint256"
-              },
-              {
-                "label": "closeOracleId",
-                "type": "t_uint256"
-              },
-              {
-                "label": "totalAmount",
-                "type": "t_uint256"
-              },
-              {
-                "label": "upAmount",
-                "type": "t_uint256"
-              },
-              {
-                "label": "downAmount",
-                "type": "t_uint256"
-              },
-              {
-                "label": "rewardBaseCalAmount",
-                "type": "t_uint256"
-              },
-              {
-                "label": "rewardAmount",
-                "type": "t_uint256"
-              },
-              {
-                "label": "oracleCalled",
-                "type": "t_bool"
-              }
-            ]
-          },
-          "t_int256": {
-            "label": "int256"
-          },
-          "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
-            "label": "mapping(address => uint256[])"
-          },
-          "t_array(t_uint256)dyn_storage": {
-            "label": "uint256[]"
-          },
-          "t_array(t_uint256)49_storage": {
-            "label": "uint256[49]"
-          },
-          "t_array(t_uint256)50_storage": {
-            "label": "uint256[50]"
-          }
-        }
-      }
-    },
-    "2c9f26de5753d2dc9c0f2da2dfa86d308dd7253aec7e7e6f01558b6648d3a666": {
-      "address": "0x3e6ae2551344149dfed6B0215D5abdE56818C687",
-      "txHash": "0x8532d6c2b0aa51e71ea11b5ebbca3cf0c46c2ed1273ffd65ec2b7b8615786324",
-      "layout": {
-        "storage": [
-          {
-            "contract": "Initializable",
-            "label": "_initialized",
-            "type": "t_bool",
-            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:21"
-          },
-          {
-            "contract": "Initializable",
-            "label": "_initializing",
-            "type": "t_bool",
-            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:26"
-          },
-          {
-            "contract": "ContextUpgradeable",
-            "label": "__gap",
-            "type": "t_array(t_uint256)50_storage",
-            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:30"
-          },
-          {
-            "contract": "OwnableUpgradeable",
-            "label": "_owner",
-            "type": "t_address",
-            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:21"
-          },
-          {
-            "contract": "OwnableUpgradeable",
-            "label": "__gap",
-            "type": "t_array(t_uint256)49_storage",
-            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:77"
-          },
-          {
-            "contract": "PausableUpgradeable",
-            "label": "_paused",
-            "type": "t_bool",
-            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:28"
-          },
-          {
-            "contract": "PausableUpgradeable",
-            "label": "__gap",
-            "type": "t_array(t_uint256)49_storage",
-            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:96"
-          },
-          {
-            "contract": "ReentrancyGuardUpgradeable",
-            "label": "_status",
-            "type": "t_uint256",
-            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:37"
-          },
-          {
-            "contract": "ReentrancyGuardUpgradeable",
-            "label": "__gap",
-            "type": "t_array(t_uint256)49_storage",
-            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:67"
+            "type": "t_contract(AggregatorV3Interface)3258",
+            "src": "contracts/FtmPricePrediction.sol:36"
           },
           {
             "contract": "FtmPricePrediction",
             "label": "genesisLockOnce",
             "type": "t_bool",
-            "src": "contracts/FtmPricePrediction.sol:29"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "genesisStartOnce",
-            "type": "t_bool",
-            "src": "contracts/FtmPricePrediction.sol:30"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "adminAddress",
-            "type": "t_address",
-            "src": "contracts/FtmPricePrediction.sol:32"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "operatorAddress",
-            "type": "t_address",
-            "src": "contracts/FtmPricePrediction.sol:33"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "bufferSeconds",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:35"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "intervalSeconds",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:36"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "minBetAmount",
-            "type": "t_uint256",
             "src": "contracts/FtmPricePrediction.sol:38"
           },
           {
             "contract": "FtmPricePrediction",
-            "label": "treasuryFee",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:39"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "treasuryAmount",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:40"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "currentEpoch",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:42"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "oracleLatestRoundId",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:44"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "oracleUpdateAllowance",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:45"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "oracle",
-            "type": "t_contract(AggregatorV3Interface)3281",
-            "src": "contracts/FtmPricePrediction.sol:47"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "ledger",
-            "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(BetInfo)1455_storage))",
-            "src": "contracts/FtmPricePrediction.sol:89"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "rounds",
-            "type": "t_mapping(t_uint256,t_struct(Round)1447_storage)",
-            "src": "contracts/FtmPricePrediction.sol:90"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "userRounds",
-            "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
-            "src": "contracts/FtmPricePrediction.sol:91"
-          }
-        ],
-        "types": {
-          "t_bool": {
-            "label": "bool"
-          },
-          "t_address": {
-            "label": "address"
-          },
-          "t_uint256": {
-            "label": "uint256"
-          },
-          "t_contract(AggregatorV3Interface)3281": {
-            "label": "contract AggregatorV3Interface"
-          },
-          "t_mapping(t_uint256,t_mapping(t_address,t_struct(BetInfo)1455_storage))": {
-            "label": "mapping(uint256 => mapping(address => struct FtmPricePrediction.BetInfo))"
-          },
-          "t_mapping(t_address,t_struct(BetInfo)1455_storage)": {
-            "label": "mapping(address => struct FtmPricePrediction.BetInfo)"
-          },
-          "t_struct(BetInfo)1455_storage": {
-            "label": "struct FtmPricePrediction.BetInfo",
-            "members": [
-              {
-                "label": "position",
-                "type": "t_enum(Position)1418"
-              },
-              {
-                "label": "amount",
-                "type": "t_uint256"
-              },
-              {
-                "label": "claimed",
-                "type": "t_bool"
-              }
-            ]
-          },
-          "t_enum(Position)1418": {
-            "label": "enum FtmPricePrediction.Position",
-            "members": [
-              "Up",
-              "Down"
-            ]
-          },
-          "t_mapping(t_uint256,t_struct(Round)1447_storage)": {
-            "label": "mapping(uint256 => struct FtmPricePrediction.Round)"
-          },
-          "t_struct(Round)1447_storage": {
-            "label": "struct FtmPricePrediction.Round",
-            "members": [
-              {
-                "label": "epoch",
-                "type": "t_uint256"
-              },
-              {
-                "label": "startTimestamp",
-                "type": "t_uint256"
-              },
-              {
-                "label": "lockTimestamp",
-                "type": "t_uint256"
-              },
-              {
-                "label": "closeTimestamp",
-                "type": "t_uint256"
-              },
-              {
-                "label": "lockPrice",
-                "type": "t_int256"
-              },
-              {
-                "label": "closePrice",
-                "type": "t_int256"
-              },
-              {
-                "label": "lockOracleId",
-                "type": "t_uint256"
-              },
-              {
-                "label": "closeOracleId",
-                "type": "t_uint256"
-              },
-              {
-                "label": "totalAmount",
-                "type": "t_uint256"
-              },
-              {
-                "label": "upAmount",
-                "type": "t_uint256"
-              },
-              {
-                "label": "downAmount",
-                "type": "t_uint256"
-              },
-              {
-                "label": "rewardBaseCalAmount",
-                "type": "t_uint256"
-              },
-              {
-                "label": "rewardAmount",
-                "type": "t_uint256"
-              },
-              {
-                "label": "oracleCalled",
-                "type": "t_bool"
-              }
-            ]
-          },
-          "t_int256": {
-            "label": "int256"
-          },
-          "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
-            "label": "mapping(address => uint256[])"
-          },
-          "t_array(t_uint256)dyn_storage": {
-            "label": "uint256[]"
-          },
-          "t_array(t_uint256)49_storage": {
-            "label": "uint256[49]"
-          },
-          "t_array(t_uint256)50_storage": {
-            "label": "uint256[50]"
-          }
-        }
-      }
-    },
-    "d5132de90038874652662c41f4721911d8184748abd2f43bacdc00aacb7a2b6f": {
-      "address": "0x45c35d4C24e772Efd4F3c3B1922b39a9c9844259",
-      "txHash": "0x4941c194a6601966ca54e740405b2466123c909576f1cb3e088a751e87306ab4",
-      "layout": {
-        "storage": [
-          {
-            "contract": "Initializable",
-            "label": "_initialized",
-            "type": "t_bool",
-            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:21"
-          },
-          {
-            "contract": "Initializable",
-            "label": "_initializing",
-            "type": "t_bool",
-            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:26"
-          },
-          {
-            "contract": "ContextUpgradeable",
-            "label": "__gap",
-            "type": "t_array(t_uint256)50_storage",
-            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:30"
-          },
-          {
-            "contract": "OwnableUpgradeable",
-            "label": "_owner",
-            "type": "t_address",
-            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:21"
-          },
-          {
-            "contract": "OwnableUpgradeable",
-            "label": "__gap",
-            "type": "t_array(t_uint256)49_storage",
-            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:77"
-          },
-          {
-            "contract": "PausableUpgradeable",
-            "label": "_paused",
-            "type": "t_bool",
-            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:28"
-          },
-          {
-            "contract": "PausableUpgradeable",
-            "label": "__gap",
-            "type": "t_array(t_uint256)49_storage",
-            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:96"
-          },
-          {
-            "contract": "ReentrancyGuardUpgradeable",
-            "label": "_status",
-            "type": "t_uint256",
-            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:37"
-          },
-          {
-            "contract": "ReentrancyGuardUpgradeable",
-            "label": "__gap",
-            "type": "t_array(t_uint256)49_storage",
-            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:67"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "genesisLockOnce",
-            "type": "t_bool",
-            "src": "contracts/FtmPricePrediction.sol:30"
-          },
-          {
-            "contract": "FtmPricePrediction",
             "label": "genesisStartOnce",
             "type": "t_bool",
-            "src": "contracts/FtmPricePrediction.sol:31"
+            "src": "contracts/FtmPricePrediction.sol:39"
           },
           {
             "contract": "FtmPricePrediction",
             "label": "adminAddress",
             "type": "t_address",
-            "src": "contracts/FtmPricePrediction.sol:33"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "operatorAddress",
-            "type": "t_address",
-            "src": "contracts/FtmPricePrediction.sol:34"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "bufferSeconds",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:36"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "intervalSeconds",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:37"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "minBetAmount",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:39"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "treasuryFee",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:40"
-          },
-          {
-            "contract": "FtmPricePrediction",
-            "label": "treasuryAmount",
-            "type": "t_uint256",
             "src": "contracts/FtmPricePrediction.sol:41"
           },
           {
             "contract": "FtmPricePrediction",
-            "label": "currentEpoch",
-            "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:43"
+            "label": "operatorAddress",
+            "type": "t_address",
+            "src": "contracts/FtmPricePrediction.sol:42"
           },
           {
             "contract": "FtmPricePrediction",
-            "label": "oracleLatestRoundId",
+            "label": "bufferSeconds",
+            "type": "t_uint256",
+            "src": "contracts/FtmPricePrediction.sol:44"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "intervalSeconds",
             "type": "t_uint256",
             "src": "contracts/FtmPricePrediction.sol:45"
           },
           {
             "contract": "FtmPricePrediction",
-            "label": "oracleUpdateAllowance",
+            "label": "minBetAmount",
             "type": "t_uint256",
-            "src": "contracts/FtmPricePrediction.sol:46"
+            "src": "contracts/FtmPricePrediction.sol:47"
           },
           {
             "contract": "FtmPricePrediction",
-            "label": "oracle",
-            "type": "t_contract(AggregatorV3Interface)3257",
+            "label": "treasuryFee",
+            "type": "t_uint256",
             "src": "contracts/FtmPricePrediction.sol:48"
           },
           {
             "contract": "FtmPricePrediction",
+            "label": "treasuryAmount",
+            "type": "t_uint256",
+            "src": "contracts/FtmPricePrediction.sol:49"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "currentEpoch",
+            "type": "t_uint256",
+            "src": "contracts/FtmPricePrediction.sol:51"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "oracleLatestRoundId",
+            "type": "t_uint256",
+            "src": "contracts/FtmPricePrediction.sol:53"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "oracleUpdateAllowance",
+            "type": "t_uint256",
+            "src": "contracts/FtmPricePrediction.sol:54"
+          },
+          {
+            "contract": "FtmPricePrediction",
             "label": "ledger",
-            "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(BetInfo)1431_storage))",
-            "src": "contracts/FtmPricePrediction.sol:73"
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(BetInfo)1354_storage))",
+            "src": "contracts/FtmPricePrediction.sol:58"
           },
           {
             "contract": "FtmPricePrediction",
             "label": "rounds",
-            "type": "t_mapping(t_uint256,t_struct(Round)1423_storage)",
-            "src": "contracts/FtmPricePrediction.sol:74"
+            "type": "t_mapping(t_uint256,t_struct(Round)1346_storage)",
+            "src": "contracts/FtmPricePrediction.sol:59"
           },
           {
             "contract": "FtmPricePrediction",
             "label": "userRounds",
             "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
-            "src": "contracts/FtmPricePrediction.sol:75"
+            "src": "contracts/FtmPricePrediction.sol:60"
           }
         ],
         "types": {
+          "t_contract(AggregatorV3Interface)3258": {
+            "label": "contract AggregatorV3Interface"
+          },
           "t_bool": {
             "label": "bool"
           },
@@ -808,21 +224,18 @@
           "t_uint256": {
             "label": "uint256"
           },
-          "t_contract(AggregatorV3Interface)3257": {
-            "label": "contract AggregatorV3Interface"
-          },
-          "t_mapping(t_uint256,t_mapping(t_address,t_struct(BetInfo)1431_storage))": {
+          "t_mapping(t_uint256,t_mapping(t_address,t_struct(BetInfo)1354_storage))": {
             "label": "mapping(uint256 => mapping(address => struct FtmPricePrediction.BetInfo))"
           },
-          "t_mapping(t_address,t_struct(BetInfo)1431_storage)": {
+          "t_mapping(t_address,t_struct(BetInfo)1354_storage)": {
             "label": "mapping(address => struct FtmPricePrediction.BetInfo)"
           },
-          "t_struct(BetInfo)1431_storage": {
+          "t_struct(BetInfo)1354_storage": {
             "label": "struct FtmPricePrediction.BetInfo",
             "members": [
               {
                 "label": "position",
-                "type": "t_enum(Position)1394"
+                "type": "t_enum(Position)1317"
               },
               {
                 "label": "amount",
@@ -834,17 +247,298 @@
               }
             ]
           },
-          "t_enum(Position)1394": {
+          "t_enum(Position)1317": {
             "label": "enum FtmPricePrediction.Position",
             "members": [
               "Up",
               "Down"
             ]
           },
-          "t_mapping(t_uint256,t_struct(Round)1423_storage)": {
+          "t_mapping(t_uint256,t_struct(Round)1346_storage)": {
             "label": "mapping(uint256 => struct FtmPricePrediction.Round)"
           },
-          "t_struct(Round)1423_storage": {
+          "t_struct(Round)1346_storage": {
+            "label": "struct FtmPricePrediction.Round",
+            "members": [
+              {
+                "label": "epoch",
+                "type": "t_uint256"
+              },
+              {
+                "label": "startTimestamp",
+                "type": "t_uint256"
+              },
+              {
+                "label": "lockTimestamp",
+                "type": "t_uint256"
+              },
+              {
+                "label": "closeTimestamp",
+                "type": "t_uint256"
+              },
+              {
+                "label": "lockPrice",
+                "type": "t_int256"
+              },
+              {
+                "label": "closePrice",
+                "type": "t_int256"
+              },
+              {
+                "label": "lockOracleId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "closeOracleId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "upAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "downAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardBaseCalAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "oracleCalled",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_int256": {
+            "label": "int256"
+          },
+          "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(address => uint256[])"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "471946b94f6228d22a8636b5dacb650a832fef3a3abe3241e69c1880461be0e5": {
+      "address": "0x53453B3D0e32314a1a4366C6ae4D9dcE37bBe795",
+      "txHash": "0xadb75a41ad315f25d2ea855434910c2c3da0f9ab912e1a12a763ec7b9e76d3d4",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:26"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:30"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:21"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:77"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:28"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:96"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:37"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:67"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "oracle",
+            "type": "t_contract(AggregatorV3Interface)3312",
+            "src": "contracts/FtmPricePrediction.sol:36"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "genesisLockOnce",
+            "type": "t_bool",
+            "src": "contracts/FtmPricePrediction.sol:38"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "genesisStartOnce",
+            "type": "t_bool",
+            "src": "contracts/FtmPricePrediction.sol:39"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "adminAddress",
+            "type": "t_address",
+            "src": "contracts/FtmPricePrediction.sol:41"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "operatorAddress",
+            "type": "t_address",
+            "src": "contracts/FtmPricePrediction.sol:42"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "bufferSeconds",
+            "type": "t_uint256",
+            "src": "contracts/FtmPricePrediction.sol:44"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "intervalSeconds",
+            "type": "t_uint256",
+            "src": "contracts/FtmPricePrediction.sol:45"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "minBetAmount",
+            "type": "t_uint256",
+            "src": "contracts/FtmPricePrediction.sol:47"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "treasuryFee",
+            "type": "t_uint256",
+            "src": "contracts/FtmPricePrediction.sol:48"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "treasuryAmount",
+            "type": "t_uint256",
+            "src": "contracts/FtmPricePrediction.sol:49"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "currentEpoch",
+            "type": "t_uint256",
+            "src": "contracts/FtmPricePrediction.sol:51"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "oracleLatestRoundId",
+            "type": "t_uint256",
+            "src": "contracts/FtmPricePrediction.sol:53"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "oracleUpdateAllowance",
+            "type": "t_uint256",
+            "src": "contracts/FtmPricePrediction.sol:54"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "ledger",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(BetInfo)1354_storage))",
+            "src": "contracts/FtmPricePrediction.sol:58"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "rounds",
+            "type": "t_mapping(t_uint256,t_struct(Round)1346_storage)",
+            "src": "contracts/FtmPricePrediction.sol:59"
+          },
+          {
+            "contract": "FtmPricePrediction",
+            "label": "userRounds",
+            "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+            "src": "contracts/FtmPricePrediction.sol:60"
+          }
+        ],
+        "types": {
+          "t_contract(AggregatorV3Interface)3312": {
+            "label": "contract AggregatorV3Interface"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_struct(BetInfo)1354_storage))": {
+            "label": "mapping(uint256 => mapping(address => struct FtmPricePrediction.BetInfo))"
+          },
+          "t_mapping(t_address,t_struct(BetInfo)1354_storage)": {
+            "label": "mapping(address => struct FtmPricePrediction.BetInfo)"
+          },
+          "t_struct(BetInfo)1354_storage": {
+            "label": "struct FtmPricePrediction.BetInfo",
+            "members": [
+              {
+                "label": "position",
+                "type": "t_enum(Position)1317"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "claimed",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_enum(Position)1317": {
+            "label": "enum FtmPricePrediction.Position",
+            "members": [
+              "Up",
+              "Down"
+            ]
+          },
+          "t_mapping(t_uint256,t_struct(Round)1346_storage)": {
+            "label": "mapping(uint256 => struct FtmPricePrediction.Round)"
+          },
+          "t_struct(Round)1346_storage": {
             "label": "struct FtmPricePrediction.Round",
             "members": [
               {
