@@ -29,8 +29,13 @@ module.exports = {
       accounts: [privateKey]
     },
     ftm: {
-      url: "https://rpc.testnet.fantom.network",
-      chainId: 0xfa2,
+      url: "https://rpc.ftm.tools/",
+      chainId: 250,
+      accounts: [privateKey]
+    },
+    kovan: {
+      url: "https://kovan.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+      chainId: 42,
       accounts: [privateKey]
     }
     

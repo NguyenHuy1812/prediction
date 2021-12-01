@@ -11,6 +11,7 @@ const signer = new ethers.Wallet(PRIVATE_KEY, alchemyProvider);
 // Contract
 const FtmPricePrediction = new ethers.Contract(CONTRACT_ADDRESS, contract.abi, signer);
 
-console.log("genesisStartRound ", FtmPricePrediction.genesisStartRound());
-//console.log("genesisLockRound ", FtmPricePrediction.genesisLockRound());
-//console.log("executeRound ", FtmPricePrediction.executeRound());
+// console.log("genesisStartRound ", FtmPricePrediction.genesisStartRound());
+
+console.log("genesisLockRound ", FtmPricePrediction.genesisLockRound());
+// console.log("executeRound ", FtmPricePrediction.executeRound());
