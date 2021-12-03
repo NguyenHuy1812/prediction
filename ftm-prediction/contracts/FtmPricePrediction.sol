@@ -684,7 +684,7 @@ pragma solidity ^0.8.0;
 pragma abicoder v2;
 
 /**
- * @title PancakePredictionV2
+ * @title FTM prediction
  */
 contract FTMPricePrediction is Ownable, Pausable, ReentrancyGuard {
     using SafeERC20 for IERC20;
